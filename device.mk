@@ -380,6 +380,10 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
 

@@ -1,2 +1,5 @@
 # Maintainer
 ro.paranoid.maintainer=ꜱᴀɴᴊɪ | サンジ
+
+# Disable Skia tracing by default
+debug.hwui.skia_atrace_enabled=false

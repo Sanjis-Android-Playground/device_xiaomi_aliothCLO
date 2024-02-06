@@ -34,3 +34,13 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/alioth/sepolicy/vendor/xiaomi/vibrator \
     device/xiaomi/alioth/sepolicy/vendor/xiaomi/wireless \
     device/xiaomi/alioth/sepolicy/vendor/xiaomi/wlan
+
+# Xiaomi Parts Sepolicy
+BOARD_SEPOLICY_DIRS += \
+    device/xiaomi/alioth/sepolicy/vendor/xiaomi/parts
+
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/xiaomi/alioth/sepolicy/private/xiaomi/parts
+
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/xiaomi/alioth/sepolicy/public/xiaomi/parts

@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2020 Paranoid Android
+ * Copyright (C) 2015-2016 The CyanogenMod Project
+ *               2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,22 +15,21 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.speaker;
+package org.lineageos.settings.touchsampling;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-public class ClearSpeakerActivity extends CollapsingToolbarBaseActivity {
+public class TouchSamplingSettingsActivity extends CollapsingToolbarBaseActivity {
+
+    private static final String TAG_HTSR = "touchsampling";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame,
-                new ClearSpeakerFragment(), TAG_CLEARSPEAKER).commit();
+                new TouchSamplingSettingsFragment(), TAG_HTSR).commit();
     }
 }

@@ -1,5 +1,8 @@
 # Maintainer
 ro.paranoid.maintainer=ꜱᴀɴᴊɪ | サンジ
 
+# Blur
+ro.launcher.blur.appLaunch=0
+
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false

@@ -6,3 +6,6 @@ ro.launcher.blur.appLaunch=0
 
 # Disable Skia tracing by default
 debug.hwui.skia_atrace_enabled=false
+
+
+debug.graphics.game_default_frame_rate.disabled=true

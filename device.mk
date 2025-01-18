@@ -79,6 +79,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media/media_codecs_c2.xml
+    $(LOCAL_PATH)/configs/media/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media/media_codecs_performance_c2.xml
+
 PRODUCT_PACKAGES += \
     XiaomiDolby
 

@@ -79,8 +79,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
-PRODUCT_PACKAGES += \
-    XiaomiDolby
+# Dolby
+#$(call inherit-product, hardware/dolby/dolby.mk)
+
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \

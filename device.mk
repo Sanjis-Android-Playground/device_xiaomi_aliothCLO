@@ -116,6 +116,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 

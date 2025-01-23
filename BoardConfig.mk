@@ -126,6 +126,10 @@ BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_DEFCONFIG := alioth_defconfig
 
 KERNEL_LLVM_SUPPORT := true
+KERNEL_LD := LD=ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS := LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip
+TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1 LLVM_IAS=1
+TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true

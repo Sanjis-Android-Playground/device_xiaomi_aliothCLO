@@ -5,11 +5,37 @@ LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
+    AudioFX \
+    Eleven \
+    Twelve \
+    Etar \
+    ExactCalculator \
+    Jelly \
+    MusicFX \
+    Music \
+    Recorder \
+    Seedvault \
     Drive \
+    DeskClock \
+    stk \
+    Stk \
     GoogleCamera \
-    Maps \
+    Glimpse \
+    Gallery2 \
+    MiuiScanner \
+    MatLog \
     MyVerizonServices \
     OBDM_Permissions \
+    GoogleTTS \
+    arcore \
+    Videos \
+    MaestroPrebuilt \
+    talkback \
+    SoundAmplifierPrebuilt \
+    DevicePolicyPrebuilt \
+    TrichromeLibrary \
+    TrichromeWebView \
+    TrichromeChrome \
     obdm_stub \
     OemDmTrigger \
     OPScreenRecord \
@@ -20,6 +46,8 @@ LOCAL_OVERRIDES_PACKAGES := \
     Snap \
     SprintDM \
     SprintHM \
+    ViaBrowser \
+    Videos \
     VZWAPNLib \
     VzwOmaTrigger \
     YouTube \
